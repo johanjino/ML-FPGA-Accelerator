@@ -48,7 +48,7 @@ def create_model():
     model.save("test_ML.h5")
 
 def model_load():
-    model = tf.keras.models.load_model('test_ML.h5')
+    model = tf.keras.models.load_model('test/test_ML.h5')
     return model
 
 #create_model()
@@ -56,4 +56,4 @@ def model_load():
 model = model_load()
 print(model.predict([[10,2]]))
 print(model.predict([[-2,7]]))
-print(model.predict([[6,5]]))
+print(model.predict([[5,5]]))
