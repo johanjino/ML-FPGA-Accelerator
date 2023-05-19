@@ -1,5 +1,4 @@
 import tensorflow as tf
-from matplotlib import pyplot as plt
 import numpy as np
 
 
@@ -36,6 +35,8 @@ def create_model():
     # Train the model on some example data
     history = model.fit(tf.convert_to_tensor(data), tf.convert_to_tensor(data_ref), validation_split = 0.3, epochs=5, batch_size=4)
     print(history.history.keys())
+    
+    from matplotlib import pyplot as plt
     plt.plot(history.history['accuracy'])
     plt.plot(history.history['loss'])
     #plt.plot(history.history['val_accuracy'])
