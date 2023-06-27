@@ -26,12 +26,13 @@ def graph(filename="test/test_ML.h5"):
 
     return head
 
-# head = graph()
-# print(head.propagate([5,5]))
-# next = head
-# while next!=None:
-#     print(next.bias)
-#     next=next.next
+head = graph()
+print(head.propagate([5,5]))
+next = head.next
+while next!=None:
+    print(next.kernel)
+    print(next.kernel.shape)
+    next=next.next
     
 
 

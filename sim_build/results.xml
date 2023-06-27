@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1687893324" />
+    <testcase name="multiply_test" classname="test_matrix_multiplier" file="/mnt/c/Johan/Skills/Personal Projects/ML-FPGA-Accelerator/src/Hardware/tests/test_matrix_multiplier.py" lineno="149" time="0.009413480758666992" sim_time_ns="110.001" ratio_time="11685.475630119292" />
+  </testsuite>
+</testsuites>
